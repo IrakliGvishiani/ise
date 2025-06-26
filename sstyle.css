@@ -5,128 +5,120 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.rame {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-.rame .calendarmaaindiv {
+.calendarmaaindiv {
   border: solid 0.6px #0732EF;
   border-radius: 30px;
-  width: 77%;
-  height: 460px;
+  height: 500px;
   display: flex;
-  gap: 20px;
+  gap: 30px;
   justify-content: center;
   align-items: center;
-  padding: 0px 30px;
+  padding: 20px 40px;
+  width: 1150px;
 }
-.rame .calendarmaaindiv .calendarchild1 {
+.calendarmaaindiv .calendarchild1 {
   width: 70%;
   height: 83%;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 25px;
 }
-.rame .calendarmaaindiv .calendarchild1 .top-part {
+.calendarmaaindiv .calendarchild1 .top-part {
   display: flex;
   width: 100%;
 }
-.rame .calendarmaaindiv .calendarchild1 .top-part .top-column {
+.calendarmaaindiv .calendarchild1 .top-part .top-column {
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 5px;
 }
-.rame .calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row {
+.calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
 }
-.rame .calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row:hover .psvg {
+.calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row:hover .psvg {
   cursor: pointer;
 }
-.rame .calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row:hover .psvg .timezone, .rame .calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row:hover .psvg .chevron {
+.calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row:hover .psvg .timezone, .calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row:hover .psvg .chevron {
   opacity: 0.7;
 }
-.rame .calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row .pick {
+.calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row .pick {
   color: #0732EF;
   font-size: 23px;
   font-weight: bold;
 }
-.rame .calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row .psvg {
+.calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row .psvg {
   align-items: flex-end;
   display: flex;
 }
-.rame .calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row .psvg .timezone {
+.calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row .psvg .timezone {
   color: #0732EF;
   font-size: 15px;
   font-weight: 500;
 }
-.rame .calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row .psvg .chevron {
+.calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row .psvg .chevron {
   color: #0732EF;
 }
-.rame .calendarmaaindiv .calendarchild1 .top-part .top-column .line {
+.calendarmaaindiv .calendarchild1 .top-part .top-column .line {
   height: 0.5px;
   background-color: #0732EF;
   width: 100%;
 }
-.rame .calendarmaaindiv .calendarchild1 .main-part {
+.calendarmaaindiv .calendarchild1 .main-part {
   display: flex;
   width: 100%;
   height: 100%;
 }
-.rame .calendarmaaindiv .calendarchild1 .main-part .mainpartchilds {
+.calendarmaaindiv .calendarchild1 .main-part .mainpartchilds {
   width: 50%;
   height: 100%;
 }
-.rame .calendarmaaindiv .calendarchild1 .main-part .fr-child {
+.calendarmaaindiv .calendarchild1 .main-part .fr-child {
   padding: 0px 25px;
-  gap: 20px;
+  gap: 35px;
   display: flex;
   flex-direction: column;
 }
-.rame .calendarmaaindiv .calendarchild1 .main-part .fr-child .frchildtop {
+.calendarmaaindiv .calendarchild1 .main-part .fr-child .frchildtop {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-.rame .calendarmaaindiv .calendarchild1 .main-part .fr-child .frchildtop svg {
+.calendarmaaindiv .calendarchild1 .main-part .fr-child .frchildtop svg {
   color: #0732EF;
   cursor: pointer;
 }
-.rame .calendarmaaindiv .calendarchild1 .main-part .fr-child .frchildtop p {
+.calendarmaaindiv .calendarchild1 .main-part .fr-child .frchildtop p {
   color: #0732EF;
   font-size: 21px;
   letter-spacing: 1px;
 }
-.rame .calendarmaaindiv .calendarchild1 .main-part .fr-child .actualcalendar {
+.calendarmaaindiv .calendarchild1 .main-part .fr-child .actualcalendar {
   display: flex;
   width: 100%;
   height: 90%;
 }
-.rame .calendarmaaindiv .calendarchild1 .main-part .fr-child .actualcalendar .calendarrow {
+.calendarmaaindiv .calendarchild1 .main-part .fr-child .actualcalendar .calendarrow {
   display: flex;
   flex-direction: column;
   gap: 10px;
   width: 50px;
   align-items: center;
 }
-.rame .calendarmaaindiv .calendarchild1 .main-part .fr-child .actualcalendar .calendarrow .month {
+.calendarmaaindiv .calendarchild1 .main-part .fr-child .actualcalendar .calendarrow .month {
   color: #0732EF;
   font-weight: 600;
   font-size: 15px;
   opacity: 0.7;
 }
-.rame .calendarmaaindiv .calendarchild1 .main-part .fr-child .actualcalendar .calendarrow .numbers {
-  color: #0732EF;
+.calendarmaaindiv .calendarchild1 .main-part .fr-child .actualcalendar .calendarrow .numbers {
   font-weight: 600;
   font-size: 16px;
 }
-.rame .calendarmaaindiv .calendarchild1 .main-part .fr-child .actualcalendar .calendarrow .dotdiv {
+.calendarmaaindiv .calendarchild1 .main-part .fr-child .actualcalendar .calendarrow .dotdiv {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -136,18 +128,134 @@
   font-weight: 600;
   font-size: 16px;
 }
-.rame .calendarmaaindiv .calendarchild1 .main-part .fr-child .actualcalendar .calendarrow .dotdiv:hover {
+.calendarmaaindiv .calendarchild1 .main-part .fr-child .actualcalendar .calendarrow .dotdiv:hover {
   background-color: rgba(0, 0, 0, 0.0549019608);
   cursor: pointer;
 }
-.rame .calendarmaaindiv .calendarchild1 .main-part .fr-child .actualcalendar .calendarrow .dotdiv .dot {
+.calendarmaaindiv .calendarchild1 .main-part .fr-child .actualcalendar .calendarrow .dotdiv .dot {
   width: 4px;
   height: 4px;
-  background-color: #0732EF;
+  background-color: rgb(81, 122, 6);
   border-radius: 20px;
 }
-.rame .calendarmaaindiv .calendarchild2 {
-  width: 30%;
+.calendarmaaindiv .calendarchild1 .main-part .sc-child {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  gap: 30px;
+}
+.calendarmaaindiv .calendarchild1 .main-part .sc-child .sessionsdiv {
+  display: flex;
+  justify-content: center;
+}
+.calendarmaaindiv .calendarchild1 .main-part .sc-child .sessionsdiv p {
+  color: #0732EF;
+  text-decoration: underline;
+  font-size: 20px;
+}
+.calendarmaaindiv .calendarchild1 .main-part .sc-child .sessionsdiv p:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.calendarmaaindiv .calendarchild1 .main-part .sc-child p {
+  color: #0732EF;
+  font-size: 21px;
+}
+.calendarmaaindiv .calendarchild1 .main-part .sc-child .timecolumn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.calendarmaaindiv .calendarchild1 .main-part .sc-child .timecolumn .buttonrow {
+  display: flex;
+  gap: 10px;
+}
+.calendarmaaindiv .calendarchild1 .main-part .sc-child .timecolumn .buttonrow button {
+  border: solid 0.6px #0732EF;
+  border-radius: 30px;
+  padding: 10px 50px;
+  background-color: transparent;
+  color: #0732EF;
+  font-size: 15px;
+  font-weight: bold;
+}
+.calendarmaaindiv .calendarchild1 .main-part .sc-child .timecolumn .buttonrow button:hover {
+  background-color: rgba(0, 0, 0, 0.056);
+  cursor: pointer;
+}
+.calendarmaaindiv .calendarchild1 .main-part .sc-child .timecolumn .buttonrow button:active {
+  background-color: rgba(0, 0, 0, 0.104);
+}
+.calendarmaaindiv .calendarchild2 {
+  width: 23%;
   height: 83%;
-  border: solid 0.7px blue;
+  display: flex;
+  flex-direction: column;
+}
+.calendarmaaindiv .calendarchild2 .detailscolumn {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.calendarmaaindiv .calendarchild2 .detailscolumn p {
+  color: #0732EF;
+  font-size: 23px;
+  font-weight: bold;
+}
+.calendarmaaindiv .calendarchild2 .detailscolumn .lineee {
+  height: 0.5px;
+  background-color: #0732EF;
+  width: 100%;
+}
+.calendarmaaindiv .calendarchild2 .calendarend {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  gap: 5px;
+}
+.calendarmaaindiv .calendarchild2 .calendarend .endP {
+  color: #0732EF;
+  font-size: 19px;
+  letter-spacing: 1px;
+}
+.calendarmaaindiv .calendarchild2 .calendarend .miniP {
+  font-size: 14px;
+  font-weight: bold;
+  color: #0732EF;
+}
+.calendarmaaindiv .calendarchild2 .buttondiv {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-top: 40px;
+}
+.calendarmaaindiv .calendarchild2 .buttondiv button {
+  border: 0.7px solid #0732EF;
+  border-radius: 30px;
+  background-color: transparent;
+  color: #0732EF;
+  font-size: 20px;
+  padding: 8px 100px;
+  transition: 0.2s ease-in-out;
+}
+.calendarmaaindiv .calendarchild2 .buttondiv button:hover {
+  background-color: #0732EF;
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1448px) {
+  .calendarmaaindiv .calendarchild1 .main-part .sc-child .timecolumn .buttonrow {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .calendarmaaindiv {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    width: 900px;
+  }
 }/*# sourceMappingURL=sstyle.css.map */

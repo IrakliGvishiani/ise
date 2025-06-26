@@ -1,0 +1,439 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  background-color: #0732EF;
+  width: 100%;
+  height: 800px;
+  margin-top: 0px;
+  display: grid;
+  grid-template-areas: "ft1 ft2";
+}
+footer .ft1 {
+  grid-area: ft1;
+  display: grid;
+  grid-template-areas: "k k" "r d" "s f" "e e";
+}
+footer .ft1 .keeprising {
+  grid-area: k;
+  align-self: center;
+  justify-self: center;
+  width: 500px;
+}
+footer .ft1 .keeprising p {
+  font-weight: bold;
+  font-size: 77px;
+  color: white;
+}
+footer .ft1 .reach {
+  grid-area: r;
+  justify-self: flex-end;
+  margin-left: -50px;
+  align-self: center;
+}
+footer .ft1 .reach .flexcolumn {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 300px;
+}
+footer .ft1 .reach .flexcolumn .rch {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+footer .ft1 .reach .flexcolumn .clmn {
+  display: flex;
+  flex-direction: column;
+}
+footer .ft1 .reach .flexcolumn .clmn p {
+  color: white;
+  font-size: 20px;
+}
+footer .ft1 .address {
+  grid-area: d;
+  justify-self: start;
+  align-self: center;
+}
+footer .ft1 .address .dflex {
+  display: flex;
+  height: 110px;
+  align-items: flex-end;
+}
+footer .ft1 .address .dflex p {
+  color: white;
+  font-size: 20px;
+  width: 200px;
+}
+footer .ft1 .socials {
+  grid-area: s;
+  justify-self: end;
+}
+footer .ft1 .socials .socialsflex {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 300px;
+}
+footer .ft1 .socials .socialsflex p {
+  color: white;
+  font-size: 20px;
+}
+footer .ft1 .faq {
+  grid-area: f;
+}
+footer .ft1 .faq .faqflex {
+  display: flex;
+  flex-direction: column;
+}
+footer .ft1 .faq .faqflex p {
+  color: white;
+  font-size: 20px;
+}
+footer .ft1 .footerendp {
+  align-self: flex-end;
+  width: 20px;
+  justify-self: start;
+  margin-bottom: 10px;
+  grid-area: e;
+  text-decoration: none !important;
+}
+footer .ft1 .footerendp a {
+  text-decoration: none;
+}
+footer .ft1 .footerendp p {
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+}
+footer .ft1 .footerendp p span {
+  text-decoration: underline;
+}
+footer .ft2 {
+  grid-area: ft2;
+  background-color: red;
+  display: grid;
+  gap: 25px;
+  grid-template-areas: "sp sp sp sp sp sp" "fn fn fn ln ln ln" "em em em cm cm cm" "ms ms ms ms ms ms";
+  width: 300px;
+}
+footer .ft2 .space {
+  grid-area: sp;
+  align-self: center;
+  justify-self: center;
+  width: 20px;
+}
+footer .ft2 .space p {
+  display: none;
+  font-weight: bold;
+  font-size: 77px;
+  color: white;
+}
+footer .ft2 .firstname {
+  grid-area: fn;
+  align-self: flex-end;
+}
+footer .ft2 .firstname .inputflex {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 85%;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+footer .ft2 .firstname .inputflex p {
+  color: white;
+  font-weight: bold;
+  font-size: 23px;
+}
+footer .ft2 .firstname .inflex {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .ft2 .firstname .inflex label {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+  width: 10px;
+}
+footer .ft2 .firstname .inflex input {
+  background-color: transparent;
+  border: solid white 0.6px;
+  border-radius: 30px;
+  padding: 0px 20px;
+  width: 240px;
+  height: 42px;
+  color: white;
+  caret-color: white;
+  font-size: 16px;
+}
+footer .ft2 .lastname {
+  grid-area: ln;
+  align-self: flex-end;
+}
+footer .ft2 .lastname .inflex {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .ft2 .lastname .inflex label {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+footer .ft2 .lastname .inflex input {
+  background-color: transparent;
+  border: solid white 0.6px;
+  border-radius: 30px;
+  padding: 0px 20px;
+  width: 240px;
+  height: 42px;
+  color: white;
+  caret-color: white;
+  font-size: 16px;
+}
+footer .ft2 .email {
+  grid-area: em;
+}
+footer .ft2 .email .inflex {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .ft2 .email .inflex label {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+footer .ft2 .email .inflex input {
+  background-color: transparent;
+  border: solid white 0.6px;
+  border-radius: 30px;
+  padding: 0px 20px;
+  width: 240px;
+  height: 42px;
+  color: white;
+  caret-color: white;
+  font-size: 16px;
+}
+footer .ft2 .company {
+  grid-area: cm;
+}
+footer .ft2 .company .inflex {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .ft2 .company .inflex label {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+footer .ft2 .company .inflex input {
+  background-color: transparent;
+  border: solid white 0.6px;
+  border-radius: 30px;
+  padding: 0px 20px;
+  width: 240px;
+  height: 42px;
+  color: white;
+  caret-color: white;
+  font-size: 16px;
+}
+footer .ft2 .message {
+  grid-area: ms;
+}
+footer .ft2 .message .inflex {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: -100px;
+}
+footer .ft2 .message .inflex label {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+footer .ft2 .message .inflex textarea {
+  background-color: transparent;
+  border: solid white 0.6px;
+  border-radius: 20px;
+  padding: 0px 20px;
+  width: 505px;
+  height: 100px;
+  color: white;
+  caret-color: white;
+  font-size: 16px;
+  resize: none;
+}
+footer .ft2 .message .inflex button {
+  width: 250px;
+  padding: 10px 20px;
+  border: solid 0.5px white;
+  border-radius: 50px;
+  background-color: transparent;
+  font-size: 20px;
+  color: white;
+  transition: 0.3s ease-in-out;
+  margin-top: 5px;
+}
+footer .ft2 .message .inflex button:hover {
+  background-color: rgb(217, 251, 153);
+  color: #0732EF;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1215px) {
+  footer {
+    grid-template-areas: "ft2" "ft1";
+    height: 1500px;
+  }
+  footer .ft1 .keeprising p {
+    display: none;
+  }
+  footer .ft2 {
+    width: 100%;
+  }
+  footer .ft2 .space {
+    justify-self: flex-start;
+  }
+  footer .ft2 .space p {
+    display: flex;
+    background-color: green;
+  }
+  footer .ft2 .message .inflex {
+    margin-top: 0;
+    justify-self: center;
+  }
+  footer .ft2 .company .inflex {
+    margin-top: 0;
+  }
+  footer .ft2 .email .inflex {
+    justify-self: flex-end;
+  }
+  footer .ft2 .firstname .inflex {
+    justify-self: flex-end;
+  }
+  footer .ft2 .firstname .inputflex {
+    justify-self: flex-end;
+  }
+}
+@media screen and (max-width: 510px) {
+  footer .ft2 {
+    width: 100px;
+    grid-template-areas: "sp" "fn" "ln" "em" "cm" "ms";
+    padding-left: 5px;
+  }
+  footer .ft2 .firstname {
+    justify-self: flex-start;
+    width: 85%;
+  }
+  footer .ft2 .firstname .inflex {
+    width: 100%;
+  }
+  footer .ft2 .firstname .inflex input {
+    width: 100%;
+  }
+  footer .ft2 .email {
+    justify-self: flex-start;
+    width: 85%;
+  }
+  footer .ft2 .email .inflex {
+    width: 100%;
+  }
+  footer .ft2 .email .inflex input {
+    width: 100%;
+  }
+  footer .ft2 .lastname {
+    justify-self: flex-start;
+    width: 85%;
+  }
+  footer .ft2 .lastname .inflex {
+    width: 100%;
+  }
+  footer .ft2 .lastname .inflex input {
+    width: 100%;
+  }
+  footer .ft2 .message {
+    justify-self: flex-start;
+    width: 85%;
+  }
+  footer .ft2 .message .inflex {
+    width: 100%;
+  }
+  footer .ft2 .message .inflex textarea {
+    width: 100%;
+  }
+  footer .ft2 .company {
+    justify-self: flex-start;
+    width: 85%;
+  }
+  footer .ft2 .company .inflex {
+    width: 100%;
+  }
+  footer .ft2 .company .inflex input {
+    width: 100%;
+  }
+  footer .ft2 .space p {
+    font-size: 45px;
+    width: 200px;
+  }
+  footer .ft1 {
+    grid-template-areas: "k" "r" "d" "s" "f" "e";
+    width: 100px;
+  }
+  footer .ft1 .rchdiv {
+    display: flex;
+    width: 50%;
+    background-color: greenyellow;
+  }
+  footer .ft1 .rchdiv .reach {
+    margin-left: 0;
+    width: 100%;
+  }
+  footer .ft1 .rchdiv .reach .flexcolumn {
+    width: 100px;
+    justify-self: flex-start;
+    background-color: aqua;
+  }
+  footer .ft1 .rchdiv .reach .flexcolumn .clmn p {
+    font-size: 17px;
+  }
+  footer .ft1 .address .dflex {
+    margin-left: -50px;
+  }
+  footer .ft1 .address .dflex p {
+    font-size: 17px;
+    width: 100px;
+  }
+  footer .ft1 .socialsmain {
+    display: flex;
+    width: 50%;
+    background-color: red;
+  }
+  footer .ft1 .socialsmain .socials {
+    width: 50%;
+    align-self: flex-start;
+  }
+  footer .ft1 .socialsmain .socials .socialsflex {
+    align-self: flex-start;
+    width: 100px;
+    background-color: red;
+  }
+  footer .ft1 .socialsmain .socials .socialsflex a p {
+    font-size: 17px;
+    width: 20px;
+  }
+  footer .ft1 .faq {
+    width: 50%;
+  }
+  footer .ft1 .faq .faqflex {
+    background-color: red;
+    margin-left: -50px;
+    width: 200px;
+  }
+}/*# sourceMappingURL=js.css.map */
