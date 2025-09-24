@@ -1,222 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./sstyle.css">
-</head>
-<body>
+
+let arr = ["men's clothing","jewelery","electronics","women's clothing"]
+let buttons = document.querySelector('#buttons')
+let all = document.querySelector('.see-all')
+
+all.addEventListener('click',() => {cards(productsArray)})
+
+let filterProducts = []
+for(let el of arr){
+    let butto = document.createElement('button')
+    butto.innerHTML = el
+    buttons.appendChild(butto)
+    butto.addEventListener('click', () => {console.log(butto.innerText);
+      filterProducts =  productsArray.filter(categoryEle => categoryEle.category == butto.innerHTML)
+      cards(filterProducts)
+    })
+    
+    
+}
 
 
-    <div class="calendarmaaindiv">
-      <div class="calendarchild1">
-        <div class="top-part">
-          <div class="top-column">
-            <div class="kide-row">
-              <p class="pick">Pick Your Spot</p>
-              <div class="psvg">
-                 <p class="timezone">Time Zone: Pacific Daylight Time (PDT) </p>
-              <svg class="chevron" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true" class="sZtEhEr"><path fill-rule="evenodd" d="M18.2546728,8.18171329 L18.9617796,8.88882007 L12.5952867,15.2537133 L12.5978964,15.2558012 L11.8907896,15.962908 L11.8882867,15.9607133 L11.8874628,15.9617796 L11.180356,15.2546728 L11.1812867,15.2527133 L4.81828671,8.88882007 L5.52539349,8.18171329 L11.8882867,14.5457133 L18.2546728,8.18171329 Z"></path></svg>
-              </div>
-             
-            </div>
-            
-            <div class="line"></div>
-          </div>
-        </div>
-        <div class="main-part">
-          <div class="mainpartchilds fr-child">
-            <div class="frchildtop">
-              <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24" class="sr7Ezrg"><path d="M9.12210136,12 L16.0596461,18.9393399 C16.352647,19.2321253 16.3528218,19.706999 16.0600364,20 C15.7672509,20.293001 15.2923772,20.2931757 14.9993763,20.0003903 L7,12 L14.9993763,3.99960971 C15.2923772,3.70682428 15.7672509,3.70699902 16.0600364,4 C16.3528218,4.29300098 16.352647,4.76787468 16.0596461,5.0606601 L9.12210136,12 Z"></path></svg>
-              <p>June 2025</p>
-              <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24" class="sr7Ezrg"><path d="M8.22083109,4 C8.51380539,3.70718788 8.9886791,3.70731936 9.28149122,4.00029365 L17.2763084,12 L9.28047689,19.9997063 C8.98766478,20.2926806 8.51279106,20.2928121 8.21981676,20 C7.92684246,19.7071879 7.92671099,19.2323142 8.21952311,18.9393399 L15.1555752,12 L8.22053744,5.06066013 C7.92772532,4.76768583 7.92785679,4.29281212 8.22083109,4 Z"></path></svg>
-            </div>
-            <div class="actualcalendar">
-              <div class="calendarrow">
-                <p class="month">Sun</p>
-                 <div class="dotdiv">
-                  <p style="color:rgb(81, 122, 6);">1</p>
-                  <div class="dot"></div>
-                 </div>
-                <div class="dotdiv">
-                  <p style="color:rgb(81, 122, 6);">8</p>
-                  <div class="dot"></div>
-                </div>
-                <div class="dotdiv">
-                  <p>15</p>
-                  <div class="dot"></div>
-                </div>
-                <div class="dotdiv">
-                  <p>22</p>
-                  <div class="dot"></div>
-                </div>
-                <div class="dotdiv">
-                  <p>29</p>
-                  <div class="dot"></div>
-                </div>
-              </div>
-               <div class="calendarrow">
-                <p class="month">Mon</p>
-                 <div class="dotdiv">
-                  <p style="color:rgb(81, 122, 6);">2</p>
-                  <div class="dot"></div>
-                 </div>
-                <div class="dotdiv">
-                  <p style="color:rgb(81, 122, 6);">9</p>
-                  <div class="dot"></div>
-                </div>
-                <div class="dotdiv">
-                  <p>16</p>
-                  <div class="dot"></div>
-                </div>
-                <div class="dotdiv">
-                  <p>23</p>
-                  <div class="dot"></div>
-                </div>
-                <div class="dotdiv">
-                  <p>30</p>
-                  <div class="dot"></div>
-                </div>
-              </div>
-               <div class="calendarrow">
-                <p class="month">Tue</p>
-                 <div class="dotdiv">
-                  <p style="color:rgb(81, 122, 6);">3</p>
-                  <div class="dot"></div>
-                 </div>
-                <div class="dotdiv">
-                  <p style="color:rgb(81, 122, 6);">10</p>
-                  <div class="dot"></div>
-                </div>
-                <div class="dotdiv">
-                  <p>17</p>
-                  <div class="dot"></div>
-                </div>
-                <div class="dotdiv">
-                  <p>24</p>
-                  <div class="dot"></div>
-                </div>
-              </div>
-              <div class="calendarrow">
-                <p class="month">Wed</p>
-                 <div class="dotdiv">
-                  <p style="color:rgb(81, 122, 6);">4</p>
-                  <div class="dot"></div>
-                 </div>
-                <div class="dotdiv">
-                  <p style="color:rgb(81, 122, 6);">11</p>
-                  <div class="dot"></div>
-                </div>
-                <div class="dotdiv">
-                  <p>18</p>
-                  <div class="dot"></div>
-                </div>
-                <div class="dotdiv">
-                  <p>25</p>
-                  <div class="dot"></div>
-                </div>
-              </div>
-              <div class="calendarrow">
-                <p class="month">Thu</p>
-                 <div class="dotdiv">
-                  <p style="color:rgb(81, 122, 6);">5</p>
-                  <div class="dot"></div>
-                 </div>
-                <div class="dotdiv">
-                  <p style="color:rgb(81, 122, 6);">12</p>
-                  <div class="dot"></div>
-                </div>
-                <div class="dotdiv">
-                  <p>19</p>
-                  <div class="dot"></div>
-                </div>
-                <div class="dotdiv">
-                  <p>26</p>
-                  <div class="dot"></div>
-                </div>
-              </div>
-              <div class="calendarrow">
-                <p class="month">Fri</p>
-                 <div class="dotdiv">
-                  <p style="color:rgb(81, 122, 6);">6</p>
-                  <div class="dot"></div>
-                 </div>
-                <div class="dotdiv">
-                  <p style="color:rgb(81, 122, 6);">13</p>
-                  <div class="dot"></div>
-                </div>
-                <div class="dotdiv">
-                  <p>20</p>
-                  <div class="dot"></div>
-                </div>
-                <div class="dotdiv">
-                  <p>27</p>
-                  <div class="dot"></div>
-                </div>
-              </div>
-               <div class="calendarrow">
-                <p class="month">Sat</p>
-                 <div class="dotdiv">
-                  <p style="color:rgb(81, 122, 6);">7</p>
-                  <div class="dot"></div>
-                 </div>
-                <div class="dotdiv">
-                  <p>14</p>
-                  <div class="dot"></div>
-                </div>
-                <div class="dotdiv">
-                  <p>21</p>
-                  <div class="dot"></div>
-                </div>
-                <div class="dotdiv">
-                  <p>28</p>
-                  <div class="dot"></div>
-                </div>
-              </div>
-             
-            </div>
-          </div>
-          <div class="mainpartchilds sc-child">
-            <p>Availability for Friday, June 6</p>
-            <div class="timecolumn">
-              <div class="buttonrow">
-                <button style="background-color: rgba(81, 122, 6, 0.147);border-color: rgb(81, 122, 6);;">10:00 am</button>
-                 <button>10:30 am</button>
-              </div>
-              <div class="buttonrow">
-                <button>11:00 am</button>
-                 <button>11:30 am</button>
-              </div>
-            </div>
-            <div class="sessionsdiv">
-              <p style="color:rgb(81, 122, 6);">Show all sessions</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="calendarchild2">
-        <div class="detailscolumn">
-            <p>Service Details</p>
-            <div class="lineee"></div>
-        </div>
-        <div class="calendarend">
-          <p class="endP">Strategy Development</p>
-          <p class="endP">June 6, 2025 at 10:00 am</p>
-          <p class="miniP">San Francisco</p>
-          <p class="miniP">Staff Member #1</p>
-          <p class="miniP">1 hr</p>
-        </div>
-        <div class="buttondiv">
-          <button>Next</button>
-        </div>
-      </div>
-    </div>
-  
-
-
-
-    <script>
 let productsArray = 
 [
   {
@@ -460,9 +262,23 @@ let productsArray =
     }
   }
 ]
+ let container = document.querySelector('#container')
+ cards(productsArray)
 
-      console.log(window.location.search.split('=')[1]);
-      
-    </script>
-</body>
-</html>
+function cards (arr){
+    container.innerHTML = ''
+    for(let el of arr){
+        
+   
+container.innerHTML += `
+<div class="card" style="width: 18rem;">
+  <img src="${el.image}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">${el.category}</h5>
+    <p class="card-text">${el.price}$</p>
+    <a target="_blank" href="./indexx.html?id=${el.id}" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>`}
+}
+
+
